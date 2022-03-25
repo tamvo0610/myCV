@@ -14,7 +14,7 @@
     body {
         background-color: hsl(219, 32%, 12%);
     }
-    #header {
+    #header .header-content {
         display: none;
     }
     .card-section {
@@ -27,6 +27,7 @@
     section .container .main .content .card-item {
         min-height: unset ;
         width: calc(100% - 0px) ;
+        padding-bottom: 0;
     }
     /* ===== IMG ABOUT ===== */
     #home-section .container .image {
