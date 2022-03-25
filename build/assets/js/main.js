@@ -9,11 +9,7 @@ document.onscroll = function(){
         scrollNavBar.style.animation = "slideDown ease 0.3s"
         scrollNavBar.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
     } else {
-        scrollNavBar.style.backgroundColor = null
-        scrollNavBar.style.color = null
-        scrollNavBar.style.lineHeight = null
-        scrollNavBar.style.animation = null
-        scrollNavBar.style.boxShadow = null
+        scrollNavBar.style = null
     }
 }
 
