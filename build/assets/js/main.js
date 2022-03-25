@@ -3,7 +3,7 @@ document.onscroll = function(){
     const scrollNavBar = document.querySelector("#header")
     const scrollWidth = window.scrollY
     if(scrollWidth > 0){
-        scrollNavBar.style.backgroundColor = "hsl(219, 48%, 8%)"
+        scrollNavBar.style.backgroundColor = "hsla(219, 32%, 16%, .8)"
         scrollNavBar.style.color = "hsl(219, 8%, 75%)"
         scrollNavBar.style.lineHeight = "2rem"
         scrollNavBar.style.animation = "slideDown ease 0.3s"
