@@ -29,6 +29,9 @@
         padding: 2rem 1rem;
         margin: auto 0;
     }
+    section .container .main .content {
+        padding: 2rem 0 0 0;
+    }
     section .container .main .content .card-item {
         min-height: unset ;
         width: calc(100% - 0px) ;
@@ -54,15 +57,14 @@
         min-width: 120px ;
         width: unset;
     }
-
-#contact-section .container .content .card-item img {
-    width: 300px;
-    height: 300px;
-}
+    #contact-section .container .content .card-item img {
+        width: 300px;
+        height: 300px;
+    }
 
     /* ===== FOOOTER ===== */
     #footer-section {
         padding: 0 2rem 2rem 2rem;
-        margin-bottom: 4.25rem;
+        margin-bottom: 5rem;
     }
 }
