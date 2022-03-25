@@ -256,7 +256,7 @@ section span a:hover{
     height: 60px;
     box-shadow: hsl(219, 32%, 12%) 0px 1px 4px;
 }
-#navbar > div > ul > li a:focus {
+#navbar .active-link {
     color: hsl(219, 48%, 8%);
     background-color: rgb(177, 180, 147);
 }
