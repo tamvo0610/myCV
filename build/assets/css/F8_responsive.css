@@ -1,0 +1,57 @@
+ /* RESPONSIVE */
+ /* ----- PC ----- */
+@media (min-width: 1025px){
+    
+}
+ /* ----- TABLET ----- */
+@media (min-width: 769px) and (max-width: 1024px){
+    section .container .main .content .card-item {
+        min-height: unset ;
+    }
+}
+ /* ----- MOBILE ----- */
+@media (max-width: 768px){
+    body {
+        background-color: hsl(219, 32%, 12%);
+    }
+    #header {
+        display: none;
+    }
+    .card-section {
+        margin: 0 ;
+    }
+    section .container .main {
+        padding: 2rem 1rem ;
+        margin: auto 0;
+    }
+    section .container .main .content .card-item {
+        min-height: unset ;
+        width: calc(100% - 0px) ;
+    }
+    /* ===== IMG ABOUT ===== */
+    #home-section .container .image {
+        padding-top: 150%;
+    }
+    #home-section .container .main .title h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    #home-section .container .main .title span {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(177, 180, 147);
+    }
+    #about-section .container img {
+        min-height: unset ;
+    }
+    #about-section .container .content .card-item ul li span:first-child {
+        min-width: 120px ;
+        width: unset;
+    }
+    /* ===== FOOOTER ===== */
+    #footer-section {
+        padding: 0 2rem 2rem 2rem;
+        margin-bottom: 4.25rem;
+    }
+}

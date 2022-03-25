@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./build/assets/font/fontawesome-free-6.1.1-web/css/all.css">
     <!-- FLATICON -->
     <link rel="stylesheet" href="./build/assets/css/flaticon.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -18,7 +19,8 @@
     <link rel="stylesheet" href="./build/assets/css/tailwind.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./build/assets/css/main.css">
-
+    <!--  RESPONSIVE -->
+    <link rel="stylesheet" href="./build/assets/css/F8_responsive.css">
 	<!-- <link rel="stylesheet" href="css/animate.css">
 	
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -39,10 +41,10 @@
                 </button> -->
                 <div class="header-content">
                     <ul class="flex flex-row justify-center items-center">
-                        <li class="header-item"><a href="#" ><span>About</span></a></li>
-                        <li class="header-item"><a href="#" ><span>Experience</span></a></li>
-                        <li class="header-item"><a href="#" ><span>Project</span></a></li>
-                        <li class="header-item"><a href="#" ><span>Contact</span></a></li>
+                        <li class="header-item"><a href="#about-section" ><span>About</span></a></li>
+                        <li class="header-item"><a href="#exp-section" ><span>Experience</span></a></li>
+                        <li class="header-item"><a href="#project-section" ><span>Project</span></a></li>
+                        <li class="header-item"><a href="#contact-section" ><span>Contact</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -58,51 +60,57 @@
                 </div>    
                 <div class="content flex flex-row items-center justify-center">
                     <div class="btn flex items-center justify-center cursor-pointer">
-                        <a href="#">Hire me</a>
+                        <a href="#contact-section">Hire me</a>
                     </div>
                     <div class="btn flex items-center justify-center cursor-pointer">
-                        <button>Download CV</button>
+                        <a download href="./build/assets/img/SPX_Võ Chí Tâm.pdf">Download CV</a>
                     </div>
                 </div> 
             </div>
 		</div>
 	</section>
     <section id="about-section" class="card-section" class="flex justify-center items-center">
-        <div class="container grid grid-cols-1 md:grid-cols-2">
-            <div class="image"></div>
+        <div class="container">
             <div class="main flex flex-col justify-center">
                 <div class="title">
                     <span>ABOUT ME</span>
                 </div>
-                <div class="content flex flex-col">
-                    <p class="text-justify">Become an expert in Web Developer. Learning more and more to improve myself, upgrade my skills and level for a Full Stack Developer.
-                    </p>
-                    <ul>
-                        <li><span class="w-28 lg:w-40">Name:</span><span>Vo Chi Tam</span></li>
-                        <li><span class="w-28 lg:w-40">Date of birth:</span><span>October 06, 1996</span></li>
-                        <li><span class="w-28 lg:w-40">Address:</span><span>Ho Chi Minh City, Viet Nam</span></li>
-                        <li><span class="w-28 lg:w-40">Email:</span><span>tamvo0610@gmail.com</span></li>
-                        <li><span class="w-28 lg:w-40">Phone:</span><span>0961827236</span></li>
-                    </ul>
+                <div class="content content flex flex-col md:flex-row justify-center items-center flex-wrap">
+                    <div class="card-item !p-0">
+                        <img src="./build/assets/img/about.JPG" alt="">
+                    </div>
+                    <div class="card-item flex flex-col gap-6">
+                        <h2>MY INTRO</h2>
+                        <p class="text-justify">Become an expert in Web Developer. Learning more and more to improve myself, upgrade my skills and level for a Full Stack Developer.
+                        </p>
+                        <ul>
+                            <li><span class="w-32">Name:</span><span>Vo Chi Tam</span></li>
+                            <li><span class="w-32">Date of birth:</span><span>October 06, 1996</span></li>
+                            <li><span class="w-32">Address:</span><span>Ho Chi Minh City, Viet Nam</span></li>
+                            <li><span class="w-32">Email:</span><span>tamvo0610@gmail.com</span></li>
+                            <li><span class="w-32">Phone:</span><span>0961827236</span></li>
+                        </ul>
+                        <div class="about-footer flex-wrap gap-6">
+                            <div class="my-interest">
+                                <span class="flaticon-listening"></span>
+                                <div class="pl-2">Music</div>
+                            </div>
+                            <div class="my-interest">
+                                <span class="flaticon-suitcases"></span>                        
+                                <div class="pl-2">Travel</div>
+                            </div>
+                            <div class="my-interest">
+                                <span class="flaticon-video-player"></span>
+                                <div class="pl-2">Movie</div>
+                            </div>
+                            <div class="my-interest">
+                                <span class="flaticon-football"></span>
+                                <div class="pl-2">Sport</div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
-                <div class="about-footer flex-wrap gap-4">
-                    <div class="my-interest">
-                        <span class="flaticon-listening"></span>
-                        <div class="pl-2">Music</div>
-                    </div>
-                    <div class="my-interest">
-                        <span class="flaticon-suitcases"></span>                        
-                        <div class="pl-2">Travel</div>
-                    </div>
-                    <div class="my-interest">
-                        <span class="flaticon-video-player"></span>
-                        <div class="pl-2">Movie</div>
-                    </div>
-                    <div class="my-interest">
-                        <span class="flaticon-football"></span>
-                        <div class="pl-2">Sport</div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>	
@@ -112,35 +120,35 @@
                 <div class="title">
                     <span>MY EXPERIENCE</span>
                 </div>
-                <div class="content grid grid-cols-1 md:grid-cols-2">
-                    <div class="exp-education">
-                        <h2 class="text-center">Education</h2>
+                <div class="content flex flex-row justify-center items-center flex-wrap">
+                    <div class="card-item flex flex-col gap-6">
+                        <h2>Education</h2>
                         <div class="grid grid-rows-1 gap-4">
                             <h1>UNIVERSITY OF NATURAL RESOURCES AND ENVIRONMENT OF HO CHI MINH CITY</h1>
                             <span>Major: Land Adminstration</span>
                         </div>
                     </div>
-                    <div class="exp-work">
-                        <h2 class="text-center">Work</h2>
+                    <div class="card-item flex flex-col gap-6">
+                        <h2>Work</h2>
                         <div class="grid grid-rows-1 gap-4">
-                            <div class="flex flex-row gap-2">
-                                <i class="bx bxs-badge-check pt-1.5"></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class="bx bxs-badge-check pt-2"></i>
                                 <div class="flex flex-col">
                                     <h1>JnT EXPRESS</h1>
                                     <span>Supervisor</span>
                                     <p>From Jun 2020 to Dec 2021</p>
                                 </div>    
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <i class="bx bxs-badge-check pt-1.5" ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class="bx bxs-badge-check pt-2" ></i>
                                 <div>
                                     <h1>TestingVN</h1>
                                     <span>Trainee</span>
                                     <p>From Oct 2021 to Jan 2022</p>
                                 </div>  
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <i class="bx bxs-badge-check pt-1.5" ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class="bx bxs-badge-check pt-2" ></i>
                                 <div>
                                     <h1>D-Soft</h1>
                                     <span>Intern Tester</span>
@@ -149,32 +157,32 @@
                             </div>
                         </div>    
                     </div>
-                    <div class="exp-frontend">
-                        <h2 class="text-center">Front End</h2>
+                    <div class="card-item flex flex-col gap-6">
+                        <h2>Front End</h2>
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="flex flex-row gap-2">
-                                <i class='bx bxs-badge-check pt-1.5' ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class='bx bxs-badge-check pt-2' ></i>
                                 <div>
                                     <h1>HTML</h1>
                                     <span>Basic</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <i class='bx bxs-badge-check pt-1.5' ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class='bx bxs-badge-check pt-2' ></i>
                                 <div>
                                     <h1>CSS</h1>
                                     <span>Basic</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <i class='bx bxs-badge-check pt-1.5' ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class='bx bxs-badge-check pt-2' ></i>
                                 <div>
                                     <h1>Javascript</h1>
                                     <span>Basic</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <i class='bx bxs-badge-check pt-1.5' ></i>
+                            <div class="flex flex-row gap-2 justify-start">
+                                <i class='bx bxs-badge-check pt-2' ></i>
                                 <div>
                                     <h1>Tailwind CSS</h1>
                                     <span>Basic</span>
@@ -187,6 +195,186 @@
             </div>
         </div>
     </section>			
+    <section id="project-section" class="card-section">
+        <div class="container">
+            <div class="main">
+                <div class="title">
+                    <span>MY PROJECT</span>
+                </div>
+                <div class="content flex flex-row justify-center items-center flex-wrap">
+                    <div class="card-item flex flex-col gap-6">
+                        <img src="https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/622c674d2d761e000858a349/screenshot_2022-03-12-09-27-05-0000.png" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
+                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
+                                <h1>W3 BAND</h1>  
+                                <div class="flex flex-row gap-6 md:flex-col md:gap-2">
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        HTML
+                                    </span>
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        CSS
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
+                                <a href="https://w3band.netlify.app/" class="btn">Demo</a>
+                                <a href="https://github.com/tamvo0610/W3Band" class="btn">Source-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item flex flex-col gap-6">
+                        <img src="https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/623d269c6f77394065f1195c/screenshot_2022-03-25-02-19-30-0000.png" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
+                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
+                                <h1>MUSIC PLAYER</h1>  
+                                <div class="flex flex-row gap-6 md:flex-col md:gap-2">
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        HTML
+                                    </span>
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        CSS
+                                    </span>
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        Javascript
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
+                                <a href="https://fantastic-rugelach-4b8779.netlify.app/" class="btn">Demo</a>
+                                <a href="https://github.com/tamvo0610/CodeMusicPlayer" class="btn">Source-code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-item flex flex-col gap-6">
+                        <img src="https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/623bf0497e8ab80009865ee9/screenshot_2022-03-24-04-15-14-0000.png" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
+                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
+                                <h1>LOGIN FORM</h1>  
+                                <div class="flex flex-row gap-6 md:flex-col md:gap-2">
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        HTML
+                                    </span>
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        CSS
+                                    </span>
+                                    <span>
+                                        <i class='bx bxs-badge-check pt-2' ></i>
+                                        Javascript
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
+                                <a href="https://polite-dasik-c8f727.netlify.app/" class="btn">Demo</a>
+                                <a href="https://github.com/tamvo0610/LoginForm" class="btn">Source-code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section" class="card-section">
+        <div class="container">
+            <div class="main">
+                <div class="title">
+                    <span>MY CONTACT</span>
+                </div>
+                <div class="content content flex flex-row justify-center items-center flex-wrap">
+                    <div class="card-item flex flex-col gap-6 justify-center items-center">
+                        <img src="./build/assets/img/contact-section.jpg" alt="">
+                        <div class="flex flex-col justify-center items-center">
+                            <h1>Tel: </h1>
+                            <span>
+                               <a href="">0961827236</a> 
+                            </span>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <h1>Mail: </h1>
+                            <span>
+                                <a href="">tamvo0610@gmail.com</a>
+                            </span>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-4">
+                            <h1>Social Network: </h1>
+                            <span class="flex flex-row gap-3">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-skype"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </span>    
+                        </div>
+                    </div>
+                    <div class="card-contact flex flex-col gap-6">
+                        <h1 class="text-center">Send Me Message</h1>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <input type="text" name="" id="" placeholder="Your Name">
+                            <input type="text" name="" id="" placeholder="Your Email">
+                        </div>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Subject" class="w-full">
+                        </div>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Message" class="w-full">
+                        </div>
+                        <div class="btn">
+                            <button>Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer-section" class="card-section text-center">
+        <span class="">Design by
+            <a href="https://github.com/tamvo0610"> me</a>
+        </span>
+    </section>
+    <nav id="navbar" class="nav-mobild w-screen">
+        <div>
+            <ul class="grid grid-flow-col col-span-5 gap-0">
+                <li class="flex justify-center items-center">
+                    <a class="flex justify-center items-center" href="#home-section">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+                <li class="flex justify-center items-center">
+                    <a class="flex justify-center items-center" href="#about-section">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li class="flex justify-center items-center">
+                    <a class="flex justify-center items-center" href="#exp-section">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </a>
+                </li>
+                <li class="flex justify-center items-center">
+                    <a class="flex justify-center items-center" href="#project-section">
+                        <i class="fa-solid fa-bars-progress"></i>
+                    </a>
+                </li>
+                <li class="flex justify-center items-center">
+                    <a class="flex justify-center items-center" href="#footer-section">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 	</body>
         <!-- <script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>

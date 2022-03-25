@@ -17,7 +17,6 @@ body {
     background-color: hsl(219, 48%, 8%);
     font-weight: 400;
     position: relative;
-    height: 3000px;
 }
 .card-section {
     margin: 4rem 4rem;
@@ -25,7 +24,7 @@ body {
 section .container{
     max-width: unset !important;
     background-color: hsl(219, 32%, 12%);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 section .container .image {
     background-repeat: no-repeat;
@@ -50,25 +49,56 @@ section .container .main .title span {
     font-weight: 500;
     color: rgb(177, 180, 147);
 }
+section .container .main .content h2 {
+    font-weight: 700;
+    color: rgb(177, 180, 147);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+section .container .main .content h1 {
+    font-weight: 600;
+    color: rgb(177, 180, 147);
+    font-size: 1.125rem;
+}
+section .container .main .content span {
+    font-weight: 500;
+    color: hsl(219, 8%, 75%);
+}
 section .container .main .content{
     gap: 1rem;
     padding: 3rem 0;
     margin: 0 auto;
 }
+section .container .main .content .card-item{
+    padding: 2rem 2rem;
+    margin: auto;
+    background-color: hsl(219, 48%, 8%);
+    min-width: 200px;
+    width: 400px;
+    min-height: 500px;
+    border-radius: 1rem;
+}
+section .container .main .content .card-item img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
 section .btn {
     border: 1px solid hsl(219, 8%, 75%);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 1rem;
     color: hsl(219, 8%, 75%);
     background-color: hsl(219, 32%, 12%);
+    text-align: center;
+    cursor: pointer;
+    width: unset !important;
 }
 section .btn:hover {
     opacity: 0.8;
     color: hsl(219, 32%, 12%);
     background-color: hsl(219, 8%, 75%);
-}
-section span {
-    font-weight: 500;
 }
 /* ========== HEADER ========== */
 #header {
@@ -85,6 +115,7 @@ section span {
 #header .container {
     padding: 0 1rem;
     background-color: transparent !important;
+    max-width: unset !important;
 }
 #header .main > a {
     padding: 0.75rem 0;
@@ -115,7 +146,6 @@ section span {
     padding-top: 50%;
 }
 #home-section .container .main {
-    gap: 0.75rem ;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -136,10 +166,8 @@ section span {
     }
 }
 /* ========== ABOUT SECTION ========== */
-#about-section .container .image {
-    background-image: url(../img/about.JPG);
-    height: 100vh;
-    border-radius: 0.5rem;
+#about-section .container img {
+    min-height: 500px;
 }
 #about-section .container .content ul{
     display: flex;
@@ -150,7 +178,6 @@ section span {
     display: flex;
     flex-direction: row;
     font-weight: 500;
-    gap: 3rem;
 }
 #about-section .container .content li span:last-child{
     color: rgb(177, 180, 147);
@@ -168,7 +195,7 @@ section span {
     align-items: center;
     padding-left: 0.75rem;
     border-left: 3px solid rgb(177, 180, 147);
-    min-width: 97px;
+    min-width: 100px;
 }
 #about-section .container .about-footer .my-interest span{
     padding: 0.25rem;
@@ -181,24 +208,54 @@ section span {
     justify-content: center;
     align-items: center;
 }
-/* ========== EXP SECTION ========== */
-#exp-section .container .content > div{
-    padding: 2rem 2rem;
-    background-color: hsl(219, 48%, 8%);
-    min-width: 200px;
-    max-width: 500px;
-    border-radius: 0.5rem;
-    height: 400px;
+/* ========== CONTACT SECTION ========== */
+#contact-section .container .content input {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid hsl(219, 8%, 75%);
+    width: 100%;
 }
-#exp-section .container .content div h2{
-    font-weight: 500;
-    color: rgb(177, 180, 147);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.125rem;
-    padding-bottom: 1rem;
+#contact-section .container .content .card-item img {
+    border-radius: 50%;
+    padding: 1.5rem;
 }
-#exp-section .container .content div h1{
-    font-weight: 500;
+#contact-section .container .content .card-item i {
+    font-size: 1.5rem;
+}
+#contact-section .container .content .card-contact {
+    padding: 2rem;
+    margin: auto;
+    width: 400px;
+}
+/* ========== FOOTER ========== */
+#footer-section span {
+    font-weight: 600;
     color: rgb(177, 180, 147);
+}
+section span a:hover{
+    opacity: 0.5;
+}
+/* ===== NAVBAR ===== */
+#navbar {
+    position: fixed;
+    bottom: 0.5rem;
+}
+#navbar > div {
+    padding: 0.5rem;
+    margin: auto;
+    /* box-shadow: rgb(177, 180, 147) 0px -10px -1px 1px; */
+    border-radius: 1rem;
+    background-color: hsla(219, 32%, 16%, .8);
+    width: 95%;
+}
+#navbar > div > ul > li a {
+    background-color: hsl(219, 32%, 12%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: hsl(219, 32%, 12%) 0px 1px 4px;
+}
+#navbar > div > ul > li a > i {
+   color: hsl(219, 8%, 75%);
+   font-size: 2rem;
 }
