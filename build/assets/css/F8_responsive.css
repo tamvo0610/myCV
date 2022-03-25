@@ -21,13 +21,12 @@
         margin: 0 ;
     }
     section .container .main {
-        padding: 2rem 1rem ;
+        padding: 2rem 1rem 0 1rem;
         margin: auto 0;
     }
     section .container .main .content .card-item {
         min-height: unset ;
         width: calc(100% - 0px) ;
-        padding-bottom: 0;
     }
     /* ===== IMG ABOUT ===== */
     #home-section .container .image {
