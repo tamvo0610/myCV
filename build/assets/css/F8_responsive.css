@@ -1,17 +1,31 @@
  /* RESPONSIVE */
+ /* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {} */
  /* ----- PC ----- */
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     #navbar {
         display: none;
     }
 }
  /* ----- TABLET ----- */
-@media (min-width: 769px) and (max-width: 1024px){
-    section .container .main .content .card-item {
-        min-height: unset ;
-    }
+@media (min-width: 769px) and (max-width: 1023px){
     #navbar {
         display: none;
+    }
+    .card-section {
+        margin: 0 ;
     }
 }
  /* ----- MOBILE ----- */
@@ -31,10 +45,10 @@
     }
     section .container .main .content {
         padding: 2rem 0 0 0;
+        margin: 0;
     }
     section .container .main .content .card-item {
         min-height: unset ;
-        width: calc(100% - 0px) ;
     }
     /* ===== IMG ABOUT ===== */
     #home-section .container .image {
@@ -69,5 +83,10 @@
     #footer-section {
         padding: 0 2rem 2rem 2rem;
         margin-bottom: 5rem;
+    }
+}
+@media (max-width: 600px) {
+    section .container .main .content .card-item {
+        width: calc(100% - 0px) ;
     }
 }
