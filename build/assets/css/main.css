@@ -220,7 +220,8 @@ section .btn:hover {
     padding: 1.5rem;
 }
 #contact-section .container .content .card-item i {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    padding: 0 1rem;
 }
 #contact-section .container .content .card-contact {
     padding: 2rem;
