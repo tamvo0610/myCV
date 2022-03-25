@@ -197,7 +197,7 @@ section .btn:hover {
     border-left: 3px solid rgb(177, 180, 147);
     min-width: 100px;
 }
-#about-section .container .about-footer .my-interest span{
+#about-section .container .about-footer .my-interest span:first-child{
     padding: 0.25rem;
     color: hsl(219, 48%, 8%);
     background: rgb(177, 180, 147);
