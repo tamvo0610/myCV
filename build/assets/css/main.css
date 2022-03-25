@@ -256,6 +256,10 @@ section span a:hover{
     height: 60px;
     box-shadow: hsl(219, 32%, 12%) 0px 1px 4px;
 }
+#navbar > div > ul > li a:focus {
+    color: hsl(219, 48%, 8%);
+    background-color: rgb(177, 180, 147);
+}
 #navbar > div > ul > li a > i {
    color: hsl(219, 8%, 75%);
    font-size: 1.75rem;
