@@ -238,7 +238,7 @@ section span a:hover{
 /* ===== NAVBAR ===== */
 #navbar {
     position: fixed;
-    bottom: 0.5rem;
+    bottom: 1rem;
 }
 #navbar > div {
     padding: 0.5rem;
