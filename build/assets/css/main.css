@@ -202,8 +202,8 @@ section .btn:hover {
     color: hsl(219, 48%, 8%);
     background: rgb(177, 180, 147);
     border-radius: 50%;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
