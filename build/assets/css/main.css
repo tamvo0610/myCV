@@ -251,8 +251,8 @@ section span a:hover{
 #navbar > div > ul > li a {
     background-color: hsl(219, 32%, 12%);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     box-shadow: hsl(219, 32%, 12%) 0px 1px 4px;
 }
 #navbar > div > ul > li a > i {
