@@ -49,6 +49,12 @@
         min-width: 120px ;
         width: unset;
     }
+
+#contact-section .container .content .card-item img {
+    width: 150px;
+    height: 150px
+}
+
     /* ===== FOOOTER ===== */
     #footer-section {
         padding: 0 2rem 2rem 2rem;
