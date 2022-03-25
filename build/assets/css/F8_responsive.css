@@ -1,12 +1,17 @@
  /* RESPONSIVE */
  /* ----- PC ----- */
 @media (min-width: 1025px){
-    
+    #navbar {
+        display: none;
+    }
 }
  /* ----- TABLET ----- */
 @media (min-width: 769px) and (max-width: 1024px){
     section .container .main .content .card-item {
         min-height: unset ;
+    }
+    #navbar {
+        display: none;
     }
 }
  /* ----- MOBILE ----- */
