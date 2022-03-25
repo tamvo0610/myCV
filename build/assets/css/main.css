@@ -263,6 +263,6 @@ section span a:hover{
    color: hsl(219, 8%, 75%);
    font-size: 1.75rem;
 }
-#navbar .active-link > i {
+#navbar .active-link i {
    color: hsl(219, 48%, 8%);
 }
