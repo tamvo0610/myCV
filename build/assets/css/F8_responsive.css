@@ -38,7 +38,7 @@
     }
     /* ===== IMG ABOUT ===== */
     #home-section .container .image {
-        padding-top: 150%;
+        padding-top: 90%;
     }
     #home-section .container .main .title h1 {
         font-size: 3.5rem;
@@ -58,8 +58,11 @@
         width: unset;
     }
     #contact-section .container .content .card-item img {
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        max-height: 300px;
+        /* Set kích thước cho các dòng dth màn hình nhỏ */
+        min-width: 200px;
+        min-height: 200px;
     }
 
     /* ===== FOOOTER ===== */

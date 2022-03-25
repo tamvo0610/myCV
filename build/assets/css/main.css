@@ -14,6 +14,7 @@ body {
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: hsl(219, 8%, 75%);
     background-color: hsl(219, 48%, 8%);
+    font-weight: 500;
     position: relative;
 }
 .card-section {
@@ -66,6 +67,7 @@ section .container .main .content span {
 section .container .main .content{
     gap: 1rem;
     padding: 3rem 0;
+    margin: 0 auto;
 }
 section .container .main .content .card-item{
     padding: 2rem 2rem;
@@ -182,7 +184,7 @@ section .btn:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0 0.5rem;
 }
 #about-section .container .about-footer .my-interest {
     display: flex;
@@ -206,7 +208,7 @@ section .btn:hover {
 /* ========== CONTACT SECTION ========== */
 #contact-section .container .content input {
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border: 1px solid hsl(219, 8%, 75%);
     width: 100%;
 }
@@ -222,6 +224,9 @@ section .btn:hover {
     padding: 2rem;
     margin: auto;
     width: 400px;
+}
+#contact-section .container .content .card-contact div {
+    padding: 0.5rem 0;
 }
 /* ========== FOOTER ========== */
 #footer-section span {
