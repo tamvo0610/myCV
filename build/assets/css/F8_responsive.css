@@ -87,6 +87,6 @@
 }
 @media (max-width: 600px) {
     section .container .main .content .card-item {
-        width: calc(100% - 0px) ;
+        width: -webkit-fill-available;
     }
 }
