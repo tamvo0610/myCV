@@ -27,6 +27,9 @@
     .card-section {
         margin: 0 ;
     }
+    .main .content .card-item {
+        min-height: unset;
+    }
 }
  /* ----- MOBILE ----- */
 @media (max-width: 768px){
