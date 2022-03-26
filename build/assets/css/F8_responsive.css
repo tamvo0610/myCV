@@ -28,7 +28,7 @@
         margin: 0 ;
     }
     .main .content .card-item {
-        min-height: unset;
+        min-height: unset !important;
     }
 }
  /* ----- MOBILE ----- */
