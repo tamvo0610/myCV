@@ -229,6 +229,7 @@ section .btn:hover {
     padding: 0.5rem 2rem;
     border: 1px solid hsl(219, 8%, 75%);
     width: 100%;
+    color: black;
 }
 #contact-section .container .content .card-item img {
     border-radius: 50%;
