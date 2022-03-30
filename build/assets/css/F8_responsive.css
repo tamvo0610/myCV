@@ -27,9 +27,6 @@
     #navbar {
         display: none;
     }
-    #header {
-        display: none;
-    }
     #header .title span {
         display: none;
     }
@@ -44,6 +41,9 @@
 @media (max-width: 768px){
     body {
         background-color: hsl(219, 32%, 12%);
+    }
+    #header {
+        display: none;
     }
     /* #header {
         position: relative;
