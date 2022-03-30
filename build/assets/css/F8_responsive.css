@@ -18,10 +18,16 @@
     #navbar {
         display: none;
     }
+    #header .title span {
+        display: none;
+    }
 }
  /* ----- TABLET ----- */
 @media (min-width: 769px) and (max-width: 1023px){
     #navbar {
+        display: none;
+    }
+    #header .title span {
         display: none;
     }
     .card-section {
@@ -35,6 +41,9 @@
 @media (max-width: 768px){
     body {
         background-color: hsl(219, 32%, 12%);
+    }
+    #header .title a {
+        display: none;
     }
     #header .header-content {
         display: none;
