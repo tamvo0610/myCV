@@ -43,7 +43,6 @@ elementProject.forEach(function(value,index){
     const show = value.querySelector(".js-project-show")
     const hide = value.querySelector(".js-project-hide")
     const element = value.querySelector(".project-item")
-    console.log(hide)
     show.onclick = function (){
         element.classList.add("active")
         element.style.animation = "slide-hide-to-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
