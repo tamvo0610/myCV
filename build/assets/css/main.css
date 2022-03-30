@@ -114,7 +114,8 @@ section .btn:hover {
     background-color: transparent !important;
     max-width: unset !important;
 }
-#header .main > a {
+#header .main .title a,
+#header .main .title span {
     padding: 0.75rem 0;
     font-size: 2rem;
     font-weight: 700;
