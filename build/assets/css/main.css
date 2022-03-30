@@ -196,6 +196,9 @@ section .btn:hover {
     align-items: center;
 }
 /* ========== EXPERIENCE SECTION ========== */
+#project-section .card-item {
+    min-height: unset !important;
+}
 .skill-list {
     background-color: rgb(21, 28, 40);
     border-radius: 0.5rem;
@@ -219,6 +222,7 @@ section .btn:hover {
 .skill-item > p {
     margin-top: 0.5rem;
 }
+
 /* ========== CONTACT SECTION ========== */
 #contact-section .container .content input {
     border-radius: 1rem;

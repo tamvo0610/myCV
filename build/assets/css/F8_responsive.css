@@ -81,7 +81,10 @@
         min-width: 200px;
         min-height: 200px;
     }
-
+    /* ===== EXP ===== */
+    .project-item-bg {
+        gap: 1rem ;
+    }
     /* ===== FOOOTER ===== */
     #footer-section {
         padding: 0 2rem 2rem 2rem;
