@@ -56,5 +56,31 @@ elementProject.forEach(function(value,index){
     }
 })
 
-const test = $('#about-section .container .content .card-item.front')
-console.log(test)
+var waypoint = new Waypoint({
+    element: document.getElementById('exp-section'),
+    handler: function() {
+        $('#exp-section .container .main .title span').style.animation = "bounce-in-top 1.1s both"
+    },
+    offset: "95%"
+})
+var waypoint = new Waypoint({
+    element: document.getElementById('about-section'),
+    handler: function() {
+        $('#about-section .container .main .title span').style.animation = "bounce-in-top 1.1s both"
+    },
+    offset: "95%"
+})
+var waypoint = new Waypoint({
+    element: document.getElementById('project-section'),
+    handler: function() {
+        $('#project-section .container .main .title span').style.animation = "bounce-in-top 1.1s both"
+    },
+    offset: "95%"
+})
+var waypoint = new Waypoint({
+    element: document.getElementById('contact-section'),
+    handler: function() {
+        $('#contact-section .container .main .title span').style.animation = "bounce-in-top 1.1s both"
+    },
+    offset: "95%"
+})

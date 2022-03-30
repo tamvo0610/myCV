@@ -13,8 +13,7 @@
     <!-- FLATICON -->
     <link rel="stylesheet" href="./build/assets/css/flaticon.css">
     <!-- Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./build/assets/css/animation.css">
     <!-- Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./build/assets/css/tailwind.css">
@@ -46,7 +45,7 @@
             <div class="image"></div>
             <div class="main flex flex-col justify-center">
                 <div class="title">
-                    <h1>I am Tam Vo ,</h1>
+                    <h1>Hi, I'm Tam Vo <div class="hand-animate inline-block">👋</div> </h1>
                     <div class="text-slider">
                         <span class="text-slider-items"></span>
                     </div>
@@ -442,17 +441,8 @@
         </div>
     </nav>
 	</body>
-        <script src="./build/assets/js/lib/typed.js"></script>
+        <script src="./src/lib/typed/typed.js"></script>
+        <script src="./src/lib/waypoint/noframework.waypoints.js"></script>
         <script src="./build/assets/js/main.js"></script>
-        <script src="">
-            console.log($("#text-slider-items"))
-            var typed = new Typed('#text-slider-items', options);
-            var options = {
-                strings: ['Frontend Developer'],
-                typeSpeed: 80,
-                loop: true,
-                backDelay: 1100,
-                backSpeed: 30
-                };      
-        </script>
+        
 	</html>

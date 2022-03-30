@@ -151,6 +151,11 @@ section .btn:hover {
 #home-section .container .main h1 {
     font-size: 4.5rem;
     font-weight: 600;
+    position: relative;
+}
+#home-section .container .main .hand-animate {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    font-size: inherit;
 }
 /* ========== ABOUT SECTION ========== */
 #about-section .container img {
@@ -269,7 +274,7 @@ section span a:hover{
     margin: auto;
     /* box-shadow: rgb(177, 180, 147) 0px -10px -1px 1px; */
     border-radius: 1rem;
-    background-color: hsla(219, 32%, 16%, .8);
+    background-color: hsla(219, 32%, 16%, 1);
     width: 95%;
 }
 #navbar > div > ul > li a {
@@ -335,37 +340,3 @@ section span a:hover{
     padding: 1.5rem;
 }
 
-/* ========== Key Frame ========== */
-
-@keyframes slide-hide-to-left {
-    0% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-}
-@keyframes slide-right-to-hide {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-      opacity: 0;
-    }
-}
-@keyframes slideDown {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-}
