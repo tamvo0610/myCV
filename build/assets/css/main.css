@@ -1,4 +1,4 @@
-Sẽ* {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -332,7 +332,7 @@ section span a:hover{
 
 /* ========== Key Frame ========== */
 
-@keyframes slide-left {
+@keyframes slide-hide-to-left {
     0% {
       -webkit-transform: translateX(100px);
               transform: translateX(100px);
@@ -342,16 +342,16 @@ section span a:hover{
               transform: translateX(0);
     }
 }
-@keyframes scale-out-center {
+@keyframes slide-right-to-hide {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
     100% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+      opacity: 0;
     }
 }
 @keyframes slideDown {
