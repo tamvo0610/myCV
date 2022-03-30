@@ -33,7 +33,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 /* ========== Typed Text ========== */
 var typed = new Typed('.text-slider-items', {
-	strings: ["Frontend Developer ."],
+	strings: ["Frontend Developer..."],
 	typeSpeed: 80,
 	loop: true,
 	backDelay: 1100,
