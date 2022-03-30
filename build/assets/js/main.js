@@ -48,10 +48,10 @@ elementProject.forEach(function(value,index){
     console.log(hide)
     show.onclick = function (){
         element.classList.add("active")
-        element.style.animation = "slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        element.style.animation = "slide-hide-to-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
     }
     hide.onclick = function (){
-        element.style.animation = "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+        element.style.animation = "slide-right-to-hide 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
     }
 })
 
