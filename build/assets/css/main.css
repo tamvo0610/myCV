@@ -114,8 +114,7 @@ section .btn:hover {
     background-color: transparent !important;
     max-width: unset !important;
 }
-#header .main .title a,
-#header .main .title span {
+#header .main .title a {
     padding: 0.75rem 0;
     font-size: 2rem;
     font-weight: 700;
@@ -297,6 +296,10 @@ section span a:hover{
     justify-content: center;
     align-items: center;
 }
+.js-project-hide{
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+}
 .js-project-show:hover,
 .js-project-hide:hover {
     filter: brightness(1.5);
@@ -304,7 +307,7 @@ section span a:hover{
 }
 .js-project-show > i,
 .js-project-hide > i {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .project-item{
     display: none;

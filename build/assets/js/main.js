@@ -4,17 +4,15 @@ const $ = document.querySelector.bind(document),
 document.onscroll = function(){
     const scrollHeader = document.querySelector("#header")
     const scrollWidth = window.scrollY
-    if(scrollWidth > 0){
+    if(scrollWidth > 0 && window.innerWidth > 768){
         scrollHeader.style.backgroundColor = "hsla(219, 32%, 16%, .9)"
         scrollHeader.style.color = "hsl(219, 8%, 75%)"
-        scrollHeader.style.lineHeight = "2rem"
         scrollHeader.style.animation = "slideDown ease 0.3s"
         scrollHeader.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
     } else {
         scrollHeader.style = null
     }
 }
-
 /* ========== Navbar on Mobile ========== */
 const sections = document.querySelectorAll('section[id]')
 function scrollActive(){

@@ -43,14 +43,8 @@
         background-color: hsl(219, 32%, 12%);
     }
     #header {
-        display: none;
+        position: absolute;
     }
-    /* #header {
-        position: relative;
-    }
-    #header .title a {
-        display: none;
-    } */
     #header .header-content {
         display: none;
     }
@@ -74,13 +68,9 @@
     }
     #home-section .container .main .title h1 {
         font-size: 3.5rem;
-        font-weight: 600;
     }
     #home-section .container .main .title span {
-        letter-spacing: 2px;
         font-size: 2rem;
-        font-weight: 500;
-        color: rgb(177, 180, 147);
     }
     /*  */
     #about-section .container img {
@@ -110,5 +100,11 @@
 @media (max-width: 600px) {
     section .container .main .content .card-item {
         width: -webkit-fill-available;
+    }
+    #home-section .container .main .title h1 {
+        font-size: 3rem;
+    }
+    #home-section .container .main .title span {
+        font-size: 1.5rem;
     }
 }
