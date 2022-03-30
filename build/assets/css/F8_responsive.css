@@ -111,11 +111,4 @@
     section .container .main .content .card-item {
         width: -webkit-fill-available;
     }
-     #home-section .container .main .title h1 {
-        font-size: 2.5rem;
-    }
-    #home-section .container .main .title span {
-        font-size: 1rem;
-        
-    }
 }
