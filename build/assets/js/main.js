@@ -52,6 +52,7 @@ elementProject.forEach(function(value,index){
     }
     hide.onclick = function (){
         element.style.animation = "slide-right-to-hide 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+        element.classList.remove("active")
     }
 })
 
