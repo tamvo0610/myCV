@@ -48,6 +48,9 @@
     #header .header-content {
         display: none;
     }
+    #header .main .title a {
+        font-size: 1.5rem;
+    }
     .card-section {
         margin: 0 ;
     }
