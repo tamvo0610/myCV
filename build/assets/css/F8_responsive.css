@@ -27,6 +27,9 @@
     #navbar {
         display: none;
     }
+    #header {
+        display: none;
+    }
     #header .title span {
         display: none;
     }
