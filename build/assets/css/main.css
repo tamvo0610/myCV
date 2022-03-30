@@ -226,7 +226,7 @@ section .btn:hover {
 /* ========== CONTACT SECTION ========== */
 #contact-section .container .content input {
     border-radius: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     border: 1px solid hsl(219, 8%, 75%);
     width: 100%;
     color: black;
