@@ -42,12 +42,12 @@
     body {
         background-color: hsl(219, 32%, 12%);
     }
-    #header {
+    /* #header {
         position: relative;
     }
     #header .title a {
         display: none;
-    }
+    } */
     #header .header-content {
         display: none;
     }
