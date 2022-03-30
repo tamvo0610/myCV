@@ -349,8 +349,8 @@ section span a:hover{
       opacity: 1;
     }
     100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
       opacity: 0;
     }
 }
