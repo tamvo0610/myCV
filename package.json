@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.12"
   }
 }

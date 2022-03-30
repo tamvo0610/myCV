@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- FLATICON -->
     <link rel="stylesheet" href="./build/assets/css/flaticon.css">
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Tailwind CSS-->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./build/assets/css/tailwind.css">
@@ -42,7 +45,9 @@
             <div class="main flex flex-col justify-center">
                 <div class="title">
                     <h1>I am Tam Vo ,</h1>
-                    <span>Frontend Developer</span>
+                    <div class="text-slider">
+                        <span class="text-slider-items"></span>
+                    </div>
                 </div>    
                 <div class="content flex flex-row items-center justify-center">
                     <div class="btn flex items-center justify-center cursor-pointer">
@@ -63,7 +68,7 @@
                 </div>
                 <div class="content flex flex-col md:flex-row justify-center items-center flex-wrap">
                     <div class="card-item !p-0">
-                        <img src="./build/assets/img/about.JPG" alt="">
+                        <img src="./build/assets/img/profile/about.JPG" alt="">
                     </div>
                     <div class="card-item flex flex-col gap-2">
                         <h2>MY INTRO</h2>
@@ -145,33 +150,35 @@
                     </div>
                     <div class="card-item flex flex-col gap-6">
                         <h2>Front End</h2>
-                        <div class="grid grid-cols-2 gap-8 p-4">
-                            <div class="flex flex-row gap-2 justify-start">
-                                <i class='fa-solid fa-check-to-slot pt-1.5' ></i>
-                                <div>
-                                    <h1>HTML</h1>
-                                    <span></span>
+                        <div class="grid grid-cols-2 gap-6 p-4">
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="./build/assets/img/tech/html5-without-wordmark-color.svg" alt="" >
+                                    <p>HTML</p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2 justify-start">
-                                <i class='fa-solid fa-check-to-slot pt-1.5' ></i>
-                                <div>
-                                    <h1>CSS</h1>
-                                    <span>Tailwind CSS</span>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="./build/assets/img/tech/css-3-seeklogo.com.svg" alt="" >
+                                    <p>CSS</p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2 justify-start">
-                                <i class='fa-solid fa-check-to-slot pt-1.5' ></i>
-                                <div>
-                                    <h1>Javascript</h1>
-                                    <span>ES5 ES6</span>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="./build/assets/img/tech/javascript-js-seeklogo.com.svg" alt="">
+                                    <p>Javascript</p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2 justify-start">
-                                <i class='fa-solid fa-check-to-slot pt-1.5' ></i>
-                                <div>
-                                    <h1>Framwork</h1>
-                                    <span>ReactJS</span>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="./build/assets/img/tech//bootstrap-5-seeklogo.com.svg" alt="" >
+                                    <p>Bootstrap</p>
+                                </div>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="./build/assets/img/tech/react-seeklogo.com.svg" alt="" >
+                                    <p>ReactJS</p>
                                 </div>
                             </div>
                         </div>
@@ -189,77 +196,129 @@
                 </div>
                 <div class="content flex flex-row justify-center items-center flex-wrap">
                     <div class="card-item flex flex-col gap-6">
-                        <img src="./build/assets/img/w3Band.jfif" alt="">
-                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
-                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
-                                <h1>W3 BAND</h1>  
+                        <img src="./build/assets/img/project/w3Band.jfif" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-start pt-4 pb-4 m-0">
+                            <div class="flex flex-col gap-2 justify-start items-start  w-full">
+                                <h1>W3 Band</h1>  
                                 <div class="flex flex-row gap-6 md:flex-col md:gap-2">
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        HTML
-                                    </span>
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        CSS
-                                    </span>
+                                    <span>About the project</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
-                                <a href="https://w3band.netlify.app/" class="btn">Demo</a>
-                                <a href="https://github.com/tamvo0610/W3Band" class="btn">Source-code</a>
+                            <div class="js-project-show cursor-pointer">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                        </div>
+                        <div class="project-item" >
+                            <div class="project-item-bg">
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="">Technologies: </h1>
+                                        <div class="flex flex-col gap-1 pl-4">
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            HTML
+                                        </span>
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            CSS
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-full gap-6">
+                                    <a href="https://w3band.netlify.app/" class="btn">Demo</a>
+                                    <a href="https://github.com/tamvo0610/W3Band" class="btn">Source-code</a>
+                                </div>
+                                <div class="js-project-hide cursor-pointer">
+                                    <i class="fa-solid fa-circle-chevron-left"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-item flex flex-col gap-6">
-                        <img src="./build/assets/img/MusicPlayer.jfif" alt="">
-                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
-                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
-                                <h1>MUSIC PLAYER</h1>  
+                        <img src="./build/assets/img/project/MusicPlayer.jfif" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-start pt-4 pb-4 m-0">
+                            <div class="flex flex-col gap-2 justify-start items-start  w-full">
+                                <h1>Music Player</h1>  
                                 <div class="flex flex-row gap-6 md:flex-col md:gap-2">
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        HTML
-                                    </span>
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        CSS
-                                    </span>
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        Javascript
-                                    </span>
+                                    <span>About the project</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
-                                <a href="https://fantastic-rugelach-4b8779.netlify.app/" class="btn">Demo</a>
-                                <a href="https://github.com/tamvo0610/CodeMusicPlayer" class="btn">Source-code</a>
+                            <div class="js-project-show cursor-pointer">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                        </div>
+                        <div class="project-item" >
+                            <div class="project-item-bg">
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="">Technologies: </h1>
+                                        <div class="flex flex-col gap-1 pl-4">
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            HTML
+                                        </span>
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            CSS
+                                        </span>
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            JavaScript
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-full gap-6">
+                                    <a href="https://fantastic-rugelach-4b8779.netlify.app/" class="btn">Demo</a>
+                                    <a href="https://github.com/tamvo0610/CodeMusicPlayer" class="btn">Source-code</a>
+                                </div>
+                                <div class="js-project-hide cursor-pointer">
+                                    <i class="fa-solid fa-circle-chevron-left"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-item flex flex-col gap-6">
-                        <img src="./build/assets/img/loginForm.jfif" alt="">
-                        <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
-                            <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
-                                <h1>LOGIN FORM</h1>  
+                        <img src="./build/assets/img/project/loginForm.jfif" alt="">
+                        <div class="flex flex-col md:flex-row justify-between items-start pt-4 pb-4 m-0">
+                            <div class="flex flex-col gap-2 justify-start items-start  w-full">
+                                <h1>Music Player</h1>  
                                 <div class="flex flex-row gap-6 md:flex-col md:gap-2">
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        HTML
-                                    </span>
-                                    <span>
-                                        <i class='fa-solid fa-check-to-slot pt-2' ></i>
-                                        Tailwind CSS
-                                    </span>
+                                    <span>About the project</span>
                                 </div>
                             </div>
-                            <div class="flex flex-row md:flex-col gap-4 justify-center items-center md:items-stretch w-full md:w-max">
-                                <a href="https://polite-dasik-c8f727.netlify.app/" class="btn">Demo</a>
-                                <a href="https://github.com/tamvo0610/LoginForm" class="btn">Source-code</a>
+                            <div class="js-project-show cursor-pointer">
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                        </div>
+                        <div class="project-item" >
+                            <div class="project-item-bg">
+                                <div class="flex flex-col gap-2">
+                                    <h1 class="">Technologies: </h1>
+                                        <div class="flex flex-col gap-1 pl-4">
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            HTML
+                                        </span>
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            CSS
+                                        </span>
+                                        <span>
+                                            <i class='fa-solid fa-check-to-slot pt-2' ></i>
+                                            JavaScript
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center w-full gap-6">
+                                    <a href="https://polite-dasik-c8f727.netlify.app/" class="btn">Demo</a>
+                                    <a href="https://github.com/tamvo0610/LoginForm" class="btn">Source-code</a>
+                                </div>
+                                <div class="js-project-hide cursor-pointer">
+                                    <i class="fa-solid fa-circle-chevron-left"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-item flex flex-col gap-6">
-                        <img src="./build/assets/img/CV.jfif" alt="">
+                    <!-- <div class="card-item flex flex-col gap-6">
+                        <img src="./build/assets/img/project/CV.jfif" alt="">
                         <div class="flex flex-col md:flex-row justify-between items-center pt-4 pb-4 gap-6 m-auto md:m-0">
                             <div class="flex flex-col gap-2 justify-center items-center  w-full md:w-fit">
                                 <h1>MY CV</h1>  
@@ -279,7 +338,7 @@
                                 <a href="https://github.com/tamvo0610/myCV" class="btn">Source-code</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -292,7 +351,7 @@
                 </div>
                 <div class="content content flex flex-row justify-center items-center flex-wrap">
                     <div class="card-item flex flex-col gap-6 justify-center items-center">
-                        <img src="./build/assets/img/contact-section.jpg" alt="">
+                        <img src="./build/assets/img/profile/contact-section.jpg" alt="">
                         <div class="flex flex-col justify-center items-center">
                             <h1>Tel: </h1>
                             <span>
@@ -382,5 +441,17 @@
         </div>
     </nav>
 	</body>
+        <script src="./build/assets/js/lib/typed.js"></script>
         <script src="./build/assets/js/main.js"></script>
+        <script src="">
+            console.log($("#text-slider-items"))
+            var typed = new Typed('#text-slider-items', options);
+            var options = {
+                strings: ['Frontend Developer'],
+                typeSpeed: 80,
+                loop: true,
+                backDelay: 1100,
+                backSpeed: 30
+                };      
+        </script>
 	</html>
