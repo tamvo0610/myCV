@@ -54,3 +54,6 @@ elementProject.forEach(function(value,index){
         element.style.animation = "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
     }
 })
+
+const test = $('#about-section .container .content .card-item.front')
+console.log(test)
